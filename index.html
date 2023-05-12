@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
         integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='
         crossorigin='anonymous' />
@@ -21,42 +26,78 @@
             <nav class="sidebar flex">
                 <!-- Top side  -->
                 <div class="top-side flex">
-                    <div id="logo" class="nav-menu flex">
-                        <div class="logo-sm">
-                            <a href="#"><img src="img/logo-small.svg" alt="Spotify Logo"></a>
+                    <!-- Main buttons  -->
+                    <div class="nav-main">
+                        <!-- Logo  -->
+                        <div id="logo" class="nav-menu flex">
+                            <div class="logo-sm">
+                                <a href="#"><img src="img/logo-small.svg" alt="Spotify Logo"></a>
+                            </div>
+                            <div class="logo-lg">
+                                <a href="#"><img src="img/logo.svg" alt="Spotify Logo"></a>
+                            </div>
                         </div>
-                        <div class="logo-lg">
-                            <a href="#"><img src="img/logo.svg" alt="Spotify Logo"></a>
+                        <!-- Menu  -->
+                        <div class="nav-menu flex">
+                            <a href="#">
+                                <div class="function flex">
+                                    <div><img src="img/home.svg" alt="Home"></div>
+                                    <div class="text hidden">Home</div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="nav-menu flex">
-                        <div>
-                            <a href="#"><img src="img/home.svg" alt="Home"></a>
+                        <div class="nav-menu flex">
+                            <a href="#">
+                                <div class="function flex">
+                                    <div><img src="img/search.svg" alt="Home"></div>
+                                    <div class="text hidden">Cerca</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-menu flex">
+                            <a href="#">
+                                <div class="function flex">
+                                    <div><img src="img/libreria.svg" alt="Home"></div>
+                                    <div class="text hidden">La tua libreria</div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
-                    <div class="nav-menu flex">
+                    <!-- Playlist side  -->
+                    <div class="playlist hidden">
+                        <span><b>PLAYLIST</b></span>
                         <div>
-                            <a href="#"><img src="img/search.svg" alt="Search"></a>
+                            <a href="#">Crea playlist</a>
                         </div>
-                    </div>
-                    <div class="nav-menu flex">
-                        <div>
-                            <a href="#"><img src="img/libreria.svg" alt="Library"></a>
-                        </div>
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- Botside  -->
                 <div class="bot-side flex">
                     <div class="nav-menu flex">
-                        <div id="download">
-                            <a href="#"><img src="img/download.svg" alt="Download"></a>
-                        </div>
+                        <a href="#">
+                            <div class="function flex">
+                                <div id="download"><img src="img/download.svg" alt="Home"></div>
+                                <div class="text hidden">Installa app</div>
+                            </div>
+                        </a>
                     </div>
                     <div class="nav-menu flex">
-                        <div id="profile-pic">
-                            <a href="#"><img src="img/profile.svg" alt="Profile Picture"></a>
-                        </div>
+                        <a href="#">
+                            <div class="function flex">
+                                <div id="profile-pic"><img src="img/profile.svg" alt="Home"></div>
+                                <div id="profile-txt" class="text hidden">GoodPoll4nd</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </nav>
