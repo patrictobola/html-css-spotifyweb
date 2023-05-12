@@ -14,7 +14,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 img {
-  display: inline-block;
+  display: block;
 }
 a {
   text-decoration: none;
@@ -115,6 +115,125 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  color: white;
+}
+.footer-bar {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bar > div {
+  height: 100%;
+}
+
+/* Left side  */
+.left-side img {
+  height: 40px;
+}
+.left-side {
+  font-size: 10px;
+  align-items: center;
+  font-weight: 700;
+}
+.song-info {
+  color: var(--gray-txt);
+}
+.song-menu {
+  color: var(--gray-txt);
+  margin-left: 20px;
+  font-size: 1rem;
+}
+.song-menu i {
+  color: white;
+}
+.song-pic {
+  margin: 0 10px;
+}
+/* * Center side  */
+
+/* controls  */
+
+.center-side > div {
+  height: 50%;
+  align-items: center;
+}
+.song-controls-container {
+  justify-content: center;
+}
+.song-controls {
+  gap: 20px;
+  width: 166px;
+  justify-content: center;
+}
+.song-controls a {
+  color: white;
+}
+.play-btn {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Progress bar  */
+
+.song-progress-bar {
+  justify-content: center;
+}
+.song-progress-bar span {
+  font-size: 0.5rem;
+}
+.progress-bar-btn {
+  width: 100%;
+}
+.progress-bar {
+  flex-basis: 100%;
+  height: 3px;
+  background-color: gray;
+}
+.progress-bar-status {
+  height: 3px;
+  width: 30%;
+  background-color: lightblue;
+}
+.song-lasts {
+  justify-content: flex-end;
+}
+.fa-circle-play {
+  margin: 0 10px;
+}
+/* Volume bar */
+
+.right-side {
+  justify-content: end;
+  align-items: center;
+}
+.right-side i {
+  font-size: 0.8rem;
+}
+.volume-bar {
+  height: 3px;
+  width: 70px;
+  background-color: gray;
+  border-radius: 10px;
+}
+.volume-menu {
+  margin: 0 10px;
+}
+.volume-bar-icons {
+  justify-content: end;
+  gap: 10%;
+  width: 50%;
+}
+.volume-bar-icons a {
+  color: white;
+}
+.volume-bar-status {
+  height: 3px;
+  width: 30%;
+  background-color: lightblue;
 }
 
 /* Utilities  */
@@ -129,7 +248,15 @@ footer {
 .hidden {
   display: none;
 }
-
+.debug {
+  border: 1px dashed white;
+}
+.col-33 {
+  width: calc(100% / 3);
+}
+.col-15 {
+  width: 15%;
+}
 /* ********************************** */
 /* RESPONSIVE */
 /* ********************************** */
