@@ -1,6 +1,72 @@
+/* Root  */
+:root {
+  --gray-txt: #6d6d6d;
+}
+
 /* Reset  */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* ! Header  */
+
+.main-content header {
+  flex-direction: row-reverse;
+  height: 90px;
+  width: calc(100vw - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ! Main  */
+.sidebar {
+  width: 50px;
+  height: calc(100vh - 90px);
+  background-color: black;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+}
+.main {
+  overflow-y: scroll;
+  width: calc(100vw - 90px);
+  height: calc(100vh - 180px);
+  padding: 20px;
+}
+
+/* ! Footer */
+footer {
+  height: 90px;
+  background-color: #282828;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Utilities  */
+.flex {
+  display: flex;
+}
+.wrap {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ********************************** */
+/* RESPONSIVE */
+/* ********************************** */
+
+@media screen and (min-width: 576px) {
+  .main {
+    width: calc(100vw - 240px);
+  }
+  .sidebar {
+    min-width: 200px;
+  }
+  .main-content header {
+    width: calc(100vw - 200px);
+  }
 }
