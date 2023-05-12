@@ -9,6 +9,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+/* Generics  */
+img {
+  display: inline-block;
+}
 
 /* ! Header  */
 
@@ -20,14 +24,7 @@ body {
 }
 
 /* ! Main  */
-.sidebar {
-  width: 50px;
-  height: calc(100vh - 90px);
-  background-color: black;
-  flex-direction: column;
-  color: white;
-  justify-content: space-between;
-}
+/* * Sidebar  */
 .main {
   overflow-y: scroll;
   width: calc(100vw - 90px);
@@ -35,6 +32,49 @@ body {
   padding: 20px;
 }
 
+.sidebar {
+  width: 50px;
+  height: calc(100vh - 90px);
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+}
+
+.sidebar > div {
+  flex-direction: column;
+}
+/* Sidebar icons  */
+.sidebar > div img {
+  width: 25px;
+}
+.nav-menu {
+  justify-content: center;
+  margin: 3px 0;
+  width: 200px;
+}
+#logo {
+  margin: 5px 0;
+}
+.logo-lg {
+  display: none;
+}
+
+/* Botside  */
+#download img {
+  transform: scale(0.5);
+}
+#profile-pic {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  background-color: gray;
+}
+.sidebar .bot-side {
+  margin-bottom: 10px;
+}
 /* ! Footer */
 footer {
   height: 90px;
@@ -54,19 +94,45 @@ footer {
   position: relative;
   overflow: hidden;
 }
+.hidden {
+  display: none;
+}
 
 /* ********************************** */
 /* RESPONSIVE */
 /* ********************************** */
 
+/* !Tablet!  */
+
 @media screen and (min-width: 576px) {
+  /* Layout  */
   .main {
     width: calc(100vw - 240px);
   }
-  .sidebar {
+  .sidebar,
+  .sidebar > div {
     min-width: 200px;
   }
   .main-content header {
     width: calc(100vw - 200px);
+  }
+  .sidebar {
+    height: calc(100vh - 105px);
+    padding: 15px 15px 0 15px;
+  }
+
+  /* Sidebar  */
+  .nav-menu {
+    justify-content: flex-start;
+  }
+  #logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .logo-lg {
+    display: block;
+  }
+  .logo-sm {
+    display: none;
   }
 }
