@@ -66,9 +66,9 @@
                     </div>
                     <!-- Playlist side  -->
                     <div class="playlist hidden">
-                        <span><b>PLAYLIST</b></span>
+                        <h4>PLAYLIST</h4>
                         <div>
-                            <a href="#">Crea playlist</a>
+                            <a href="#" id="new-playlist"><span><i class="fas fa-plus"></i></span> Crea playlist</a>
                         </div>
                         <ul>
                             <li><a href="#">Nome Playlist</a></li>
@@ -111,7 +111,12 @@
                     <!-- Top menu  -->
                     <div class="main-menu flex">
                         <ul class="flex">
-                            <li><a href="#">IN EVIDENZA</a></li>
+                            <li>
+                                <div class="border-container">
+                                    <a href="#">IN EVIDENZA</a>
+                                    <div class="b-bottom"></div>
+                                </div>
+                            </li>
                             <li><a href="#">PODCAST</a></li>
                             <li><a href="#">CLASSIFICHE</a></li>
                             <li><a href="#">GENERI E MOOD</a></li>
@@ -282,8 +287,8 @@
                     <div class="song-info-menu">
                         <div><span>Sinister</span></div>
                         <div class="song-info-container">
-                            <div class="song-info"><span>Brano</span></div>
-                            <div class="song-info"><span>Nome</span></div>
+                            <div class="song-info"><a href="#">Brano</a></div>
+                            <div class="song-info"><a href="#">Nome</a></div>
                         </div>
                     </div>
                     <div class="song-menu">
@@ -308,8 +313,8 @@
                         <div class="song-time flex col-15"><span>0:25</span></div>
                         <a href="#" class="progress-bar-btn flex">
                             <div class="progress-bar flex">
-                                <div class="progress-bar-status">
-                                </div>
+                                <div class="progress-bar-status"></div>
+                                <div class="round"></div>
                             </div>
                         </a>
                         <div class="song-lasts flex col-15"><span>4:35</span></div>
@@ -330,8 +335,9 @@
                     </div>
                     <div class="volume-menu flex">
                         <a href="#">
-                            <div class="volume-bar">
+                            <div class="volume-bar flex">
                                 <div class="volume-bar-status"></div>
+                                <div class="round"></div>
                             </div>
                         </a>
                     </div>
