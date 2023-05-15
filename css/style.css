@@ -81,6 +81,9 @@ header .btn {
 .row .card h6 {
   margin: 0;
 }
+.image {
+  position: relative;
+}
 
 /* Row with header and subtitle  */
 .row.no-spacing-header h1 {
@@ -97,6 +100,36 @@ header .btn {
   display: block;
 }
 
+/* Cards  */
+.card .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.rounded-cards .card .overlay {
+  border-radius: 50%;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card .overlay .fa-circle-play {
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay .fa-circle-play:hover {
+  text-shadow: 0 0 20px white;
+}
 /* * Sidebar  */
 .main {
   overflow-y: auto;
@@ -261,7 +294,7 @@ footer {
 .song-lasts {
   justify-content: flex-end;
 }
-.fa-circle-play {
+.song-controls .fa-circle-play {
   margin: 0 10px;
 }
 /* Volume bar */
