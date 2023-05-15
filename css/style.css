@@ -140,11 +140,8 @@ footer {
 }
 .song-menu {
   color: var(--gray-txt);
-  margin-left: 20px;
+  margin-left: 10%;
   font-size: 1rem;
-}
-.song-menu i {
-  color: white;
 }
 .song-pic {
   margin: 0 10px;
@@ -235,7 +232,11 @@ footer {
   width: 30%;
   background-color: lightblue;
 }
-
+.status {
+  height: 3px;
+  width: 30%;
+  background-color: lightblue;
+}
 /* Utilities  */
 .flex {
   display: flex;
@@ -261,7 +262,7 @@ footer {
 /* RESPONSIVE */
 /* ********************************** */
 
-/* !Tablet!  */
+/* !Smartphone lg screen!  */
 
 @media screen and (min-width: 576px) {
   /* Layout  */
@@ -304,5 +305,21 @@ footer {
   .bot-side .nav-menu:last-child {
     border-top: 1px solid var(--gray-txt);
     padding-top: 10px;
+  }
+}
+/* !Tablet!  */
+@media screen and (min-width: 768px) {
+  /* Footer ! */
+  .song-menu {
+    display: flex;
+  }
+  .song-menu .fa-heart {
+    margin-right: 10px;
+  }
+  .song-info-container {
+    display: flex;
+  }
+  .song-info:first-child {
+    margin-right: 5px;
   }
 }
