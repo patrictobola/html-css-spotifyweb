@@ -20,23 +20,90 @@ a {
   text-decoration: none;
   color: var(--gray-txt);
 }
-
+h6 {
+  color: var(--gray-txt);
+}
 /* ! Header  */
 
 .main-content header {
-  flex-direction: row-reverse;
   height: 90px;
   width: calc(100vw - 50px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #080b12;
+  align-items: center;
+  justify-content: end;
+  position: sticky;
+}
+header .btn {
+  color: white;
+  margin-right: 20px;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: small;
 }
 
 /* ! Main  */
+/* * Main content  */
+/* Top menu - list  */
+.main-menu ul {
+  color: var(--gray-txt);
+  font-size: 0.7rem;
+  font-weight: 600;
+  list-style-type: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+/* Row  */
+.row {
+  color: white;
+}
+.row ul {
+  list-style-type: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.row .card {
+  text-align: center;
+  padding-right: 10px;
+}
+.row li {
+  width: 50%;
+}
+.row img {
+  width: 100%;
+}
+.row .card h5 {
+  margin: 10px 0;
+}
+.row .card h6 {
+  margin: 0;
+}
+
+/* Row with header and subtitle  */
+.row.no-spacing-header h1 {
+  margin-bottom: 10px;
+}
+.row.no-spacing-header h6 {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+/* Most popular Artists */
+.rounded-cards a {
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
 /* * Sidebar  */
 .main {
   overflow-y: auto;
   width: calc(100vw - 90px);
   height: calc(100vh - 220px);
   padding: 20px;
+  background-color: #141922;
 }
 
 .sidebar {
@@ -111,10 +178,6 @@ a {
 footer {
   height: 90px;
   background-color: #282828;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   color: white;
 }
 .footer-bar {
@@ -275,7 +338,7 @@ footer {
     min-width: 200px;
   }
   .main-content header {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 230px);
   }
   .sidebar {
     height: calc(100vh - 105px);
@@ -309,6 +372,12 @@ footer {
 }
 /* !Tablet!  */
 @media screen and (min-width: 768px) {
+  /* * Main Section  */
+
+  /* Recently played  */
+  .row li {
+    width: 25%;
+  }
   /* Footer ! */
   .song-menu {
     display: flex;
@@ -321,5 +390,14 @@ footer {
   }
   .song-info:first-child {
     margin-right: 5px;
+  }
+}
+/* !Laptop!  */
+@media screen and (min-width: 1200px) {
+  /* * Main Section  */
+
+  /* Recently played  */
+  .row li {
+    width: calc(100% / 6);
   }
 }
