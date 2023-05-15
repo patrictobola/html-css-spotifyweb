@@ -149,6 +149,12 @@ header .btn {
   color: aliceblue;
   font-weight: 600;
 }
+.nav-menu:hover a {
+  color: white;
+}
+.playlist a:hover {
+  color: white;
+}
 
 .sidebar > div {
   flex-direction: column;
