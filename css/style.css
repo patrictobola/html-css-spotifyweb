@@ -162,7 +162,7 @@ header .btn:hover {
 
 .sidebar {
   width: 50px;
-  height: calc(100vh - 90px);
+  max-height: calc(100vh - 90px);
   background-color: black;
   flex-direction: column;
   justify-content: space-between;
@@ -173,12 +173,6 @@ header .btn:hover {
 .nav-menu:hover a {
   color: white;
 }
-.playlist a:hover {
-  color: white;
-}
-#new-playlist:hover span {
-  background-color: white;
-}
 
 .sidebar > div {
   flex-direction: column;
@@ -186,6 +180,9 @@ header .btn:hover {
 /* Sidebar Main icons  */
 .sidebar > div img {
   width: 25px;
+}
+.sidebar > div img:hover {
+  filter: drop-shadow(0 0 10px white);
 }
 .nav-menu {
   justify-content: center;
@@ -223,6 +220,15 @@ header .btn:hover {
   padding: 10px 0;
   font-weight: 600;
 }
+.playlist a:hover {
+  color: white;
+}
+#new-playlist:hover span {
+  background-color: white;
+}
+.playlist-container {
+  overflow: scroll;
+}
 
 /* Botside  */
 #download img {
@@ -248,6 +254,7 @@ footer {
   height: 90px;
   background-color: #282828;
   color: white;
+  position: relative;
 }
 .footer-bar {
   height: 100%;
